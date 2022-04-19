@@ -1,7 +1,6 @@
-import Button from "../Button/Button";
 import "../../theme/theme.scss";
 import { Carousel } from "react-bootstrap";
-import "./header.scss";
+import "./Corousel.scss";
 import CorouselText from "../corouselText/corouselText";
 import { useDispatch, useSelector } from "react-redux";
 import { carDetails } from "../../Models/carDetails";
@@ -16,10 +15,6 @@ const contentStyle = {
   lineHeight: "6rem",
   margin: "2rem",
   background: "black",
-};
-
-const Search_handle: any = (event: React.ChangeEvent<HTMLInputElement>) => {
-  console.log(event.target.value);
 };
 
 const Header = () => {
@@ -55,33 +50,10 @@ const Header = () => {
             src="https://imgd.aeplcdn.com/1056x594/cw/ec/37710/Maruti-Suzuki-Baleno-Right-Front-Three-Quarter-147420.jpg?wm=1&q=75"
             alt="Third slide"
           />
-          {/* <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
       <div>
         <CorouselText text="FIND YOUR DREAM CAR"></CorouselText>
-      </div>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          position: "relative",
-          zIndex: 999999,
-          margin: "-13rem",
-        }}
-      >
-        <div>
-          <input className={"searchbox"} onChange={Search_handle}></input>
-        </div>
-        <div>
-          <Button height="3rem" width="6rem" children="Search" />
-        </div>
       </div>
     </div>
   );

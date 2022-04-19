@@ -2,9 +2,14 @@ import { carDetails } from "../../Models/carDetails";
 
 export const GET_CAR = "GET_CAR";
 export const SET_CAR = "SET_CAR";
+export const GET_ALL_CARS = "GET_ALL_CARS";
 
 export const getcar = () => ({
   type: GET_CAR,
+});
+
+export const getallcar = () => ({
+  type: GET_ALL_CARS,
 });
 
 export const setcar = (user: carDetails[]) => {
