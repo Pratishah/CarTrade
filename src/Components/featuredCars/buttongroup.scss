@@ -1,0 +1,25 @@
+.btn-group a:active {
+  background-color: black;
+}
+
+.btn-group a:hover {
+  background-color: black;
+  color: white;
+  :active {
+    background-color: black;
+  }
+}
+
+.btn-group {
+  padding: 1rem;
+}
+
+.flexbtn {
+  display: flex;
+  flex-basis: auto;
+}
+
+.viewall {
+  padding: 1rem;
+  margin-left: 40rem;
+}
