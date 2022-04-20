@@ -1,6 +1,10 @@
 import { call, put } from "redux-saga/effects";
-import { setcar } from "../../redux/carReducer/carReducer";
-import { requestGetAllCars, requestGetCars } from "../requests/cars";
+import { setcar, setSedancar } from "../../redux/carReducer/carReducer";
+import {
+  requestGetAllCars,
+  requestGetAllSedanCars,
+  requestGetCars,
+} from "../requests/cars";
 
 export function* handleGetCars(action) {
   try {
@@ -13,13 +17,13 @@ export function* handleGetCars(action) {
   }
 }
 
-// export function* handleGetAllCars(action) {
-//   try {
-//     const response = yield call(requestGetAllCars);
-//     const { data } = response;
-//     console.log("all_cars", data);
-//     yield put(setcar(data));
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+export function* handleGetSedanCars(action) {
+  try {
+    const response = yield call(requestGetAllSedanCars);
+    const { data } = response;
+    console.log("all_cars", data);
+    yield put(setSedancar(data));
+  } catch (error) {
+    console.log(error);
+  }
+}

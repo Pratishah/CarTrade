@@ -2,9 +2,11 @@ import { combineReducers, createStore, applyMiddleware, compose } from "redux";
 import createSagaMiddleware from "redux-saga";
 import { watcherSaga } from "../sagas/rootsaga";
 import carReducer from "./carReducer/carReducer";
+import { SedancarReducer } from "./carReducer/carReducer";
 
 const reducer = combineReducers({
   carsState: carReducer,
+  sedancarsState: SedancarReducer,
 });
 
 declare global {

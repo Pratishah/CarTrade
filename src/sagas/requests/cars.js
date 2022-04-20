@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_URL } from "../../constants/constants";
+import { API_URL, API_URL_sedans } from "../../constants/constants";
 export function requestGetCars() {
   return axios.request({
     method: "get",
@@ -12,10 +12,10 @@ export function requestGetCars() {
   });
 }
 
-export function requestGetAllCars() {
+export function requestGetAllSedanCars() {
   return axios.request({
     method: "get",
-    url: API_URL,
+    url: API_URL_sedans,
     auth: {
       username: "Hasher",
 
