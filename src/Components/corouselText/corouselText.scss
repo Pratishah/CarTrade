@@ -1,6 +1,7 @@
+@import "../../theme/theme.scss";
 .font {
-  font-family: unset;
-  font-weight: bolder;
-  color: rgb(13, 13, 13);
+  font-family: $theme-font-family;
+  font-weight: $font-weight-corousel;
+  color: white;
   text-align: center;
 }

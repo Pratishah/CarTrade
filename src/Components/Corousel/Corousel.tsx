@@ -7,6 +7,7 @@ import { carDetails } from "../../Models/carDetails";
 import { useEffect } from "react";
 import { getcar } from "../../redux/carReducer/carReducer";
 import { reducerType } from "../../redux/configureStore";
+import Searchbox from "../searchbox/searchbox";
 
 const HeadCarousel = () => {
   const cars: carDetails[] | null = useSelector<reducerType>(
@@ -45,9 +46,8 @@ const HeadCarousel = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div>
-        <CorouselText text="FIND YOUR DREAM CAR"></CorouselText>
-      </div>
+
+      <Searchbox />
     </div>
   );
 };

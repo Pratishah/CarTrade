@@ -8,15 +8,7 @@ const Searchbox = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        position: "relative",
-        zIndex: 99,
-        margin: "-13rem",
-      }}
-    >
+    <div className="searchmaindiv">
       <div>
         <input className={"searchbox"} onChange={Search_handle}></input>
       </div>

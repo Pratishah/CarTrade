@@ -20,4 +20,8 @@ code {
 #root {
   background-color: $themecolor;
   color: white;
+
+  &h {
+    color: white;
+  }
 }
