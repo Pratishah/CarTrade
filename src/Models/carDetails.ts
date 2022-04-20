@@ -1,7 +1,7 @@
 export interface carDetails {
-  id: number;
-  email: string;
-  first_name: string;
-  last_name: string;
-  avatar: string;
+  id: string;
+  name: string;
+  price: string;
+  image: string;
+  type: string;
 }

@@ -3,24 +3,18 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "antd/dist/antd.css";
-import "bootstrap/dist/css/bootstrap.css";
+import "./main.scss";
 import { Provider } from "react-redux";
 import { store } from "./redux/configureStore";
 import { BrowserRouter } from "react-router-dom";
-import { Footer } from "antd/lib/layout/layout";
-import Nav from "./Components/nav/nav";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <BrowserRouter>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </BrowserRouter>
+  <Provider store={store}>
+    <App />
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
