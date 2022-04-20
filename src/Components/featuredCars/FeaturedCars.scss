@@ -1,0 +1,13 @@
+.flexcardcontainer {
+  display: flex;
+  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.flexstyle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
