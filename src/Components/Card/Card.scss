@@ -6,11 +6,31 @@ card-body {
   color: black;
 }
 
-.pic img {
-  min-height: 20rem;
-  max-height: 20rem;
+// .pic {
+//   min-height: 20rem;
+//   max-height: 20rem;
+//   &img {
+//     width: 20rem;
+//   }
+// }
+
+.btnmargin {
+  margin-top: 0.5rem;
 }
 
-.cardsdiv {
-  background-color: antiquewhite;
+#cardsdiv {
+  background-color: rgb(242, 239, 239);
+  border: 1px solid black;
+}
+
+.carditem {
+  border: 1px solid black;
+}
+
+#arrow {
+  padding: 1rem !important;
+}
+
+.content {
+  text-align: center;
 }

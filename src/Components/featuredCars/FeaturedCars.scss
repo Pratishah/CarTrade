@@ -1,3 +1,5 @@
+@import "../../theme/theme.scss";
+
 .flexcardcontainer {
   display: flex;
   align-content: space-between;
@@ -10,4 +12,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+featurebox {
+  color: black;
+}
+
+*h1 {
+  color: black;
+  font-family: $theme-font-family;
+  font-weight: $font-weight-corousel;
+}
+
+.featuretext {
+  margin: 1rem;
+}
+
+.buttongroup {
+  background-color: white;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }

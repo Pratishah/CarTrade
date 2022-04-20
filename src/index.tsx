@@ -7,6 +7,7 @@ import "./main.scss";
 import { Provider } from "react-redux";
 import { store } from "./redux/configureStore";
 import { BrowserRouter } from "react-router-dom";
+import "font-awesome/css/font-awesome.min.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

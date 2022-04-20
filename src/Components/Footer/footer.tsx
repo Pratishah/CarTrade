@@ -6,8 +6,8 @@ import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div className="container">
-      <div className="row" style={{ display: "flex" }}>
+    <div className="container footpad">
+      <div className="row footpad" style={{ display: "flex" }}>
         <div className="col">
           <h1>Contact</h1>
           <br></br>

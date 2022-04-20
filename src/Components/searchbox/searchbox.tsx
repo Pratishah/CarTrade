@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
+import CorouselText from "../corouselText/corouselText";
 import "./searchbox.scss";
 
 const Searchbox = () => {
@@ -8,12 +9,17 @@ const Searchbox = () => {
   };
 
   return (
-    <div className="searchmaindiv">
+    <div className="centered">
       <div>
-        <input className={"searchbox"} onChange={Search_handle}></input>
+        <CorouselText props="find your Dream car" />
       </div>
-      <div>
-        <Button height="3rem" width="6rem" children="Search" />
+      <div className="searchmaindiv">
+        <div>
+          <input className={"searchbox"} onChange={Search_handle}></input>
+        </div>
+        <div>
+          <Button height="3rem" width="6rem" children="Search" />
+        </div>
       </div>
     </div>
   );
