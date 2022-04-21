@@ -19,6 +19,7 @@ const RouteComponent = () => {
       <Route path="/hatchback" element={<Hatchback />} />
       <Route path="/SUV" element={<SUV />} />
       <Route path="/ViewAllCars" element={<ViewAllCars />} />
+      <Route path="/ViewAllCars/cars/:id" element={<Detail />} />
       <Route path="/cars/:id" element={<Detail />} />
       <Route path="/hatchback/cars/:id" element={<Detail />} />
       <Route path="/SUV/cars/:id" element={<Detail />} />

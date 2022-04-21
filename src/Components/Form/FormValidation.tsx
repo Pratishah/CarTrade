@@ -2,11 +2,18 @@ import { Field, Form, Formik, ErrorMessage } from "formik";
 import "./Form.scss";
 import React from "react";
 import * as yup from "yup";
+import { useNavigate } from "react-router-dom";
 
 const FormValidation = () => {
   const defaultvalue = { Name: "", Mob: "", city: "", accept: [] };
   const submitHandler = (values: any) => {
     console.log(values);
+  };
+
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = "/Success";
+    navigate(path);
   };
 
   const validationSchema = yup.object().shape({
@@ -100,7 +107,7 @@ const FormValidation = () => {
               <ErrorMessage name="accept" />
             </p>
 
-            <button className="submit" type="submit">
+            <button onClick={routeChange} className="submit" type="submit">
               submit
             </button>
           </Form>

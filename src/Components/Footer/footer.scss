@@ -17,10 +17,20 @@
   flex-direction: column;
 }
 
-.footerimg img {
-  max-height: 3rem;
-}
+// .footerimg img {
+//   max-height: 3rem;
+// }
 
 .footpad {
   margin-top: 0.5rem;
+  max-height: 10rem;
+  &h1 {
+    font-family: $theme-font-family;
+    font-size: 200px;
+  }
+}
+
+.footerimg img {
+  height: 2rem;
+  margin: 0.2rem;
 }
