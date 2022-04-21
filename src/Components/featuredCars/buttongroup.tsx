@@ -6,17 +6,17 @@ const Buttongroup = () => {
   return (
     <div className="flexbtn">
       <div className="btn-group ">
-        <a href="#" className="btn  active" aria-current="page">
+        <Link to="SUV" className="btn  active" aria-current="page">
           Popular
-        </a>
-        <a href="#" className="btn">
+        </Link>
+        <Link to="sedan" className="btn">
           Just Launched
-        </a>
-        <a href="#" className="btn ">
+        </Link>
+        <Link to="./hatchback" className="btn ">
           Upcoming
-        </a>
+        </Link>
 
-        <Link to="/Allcars" className="viewall">
+        <Link to="/ViewAllCars" className="viewall">
           Viewall<span>{" >"}</span>
         </Link>
       </div>
