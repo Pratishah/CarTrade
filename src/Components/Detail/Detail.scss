@@ -1,8 +1,43 @@
 .detailcontainer {
-  background-color: black;
-  color: white;
-  height: 20rem;
+  background-color: white;
+  color: black;
+
   width: 30rem;
   margin: 5rem;
-  justify-content: center;
+}
+
+.carname {
+  margin-left: 5rem;
+}
+
+.firstrow {
+  display: flex;
+
+  align-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 30rem;
+  max-height: 15rem;
+}
+
+.box {
+  margin-bottom: 0.2rem;
+  font-family: Roboto;
+  p {
+    font-size: 0.7rem;
+  }
+
+  varient {
+    font-size: 0.6rem;
+  }
+}
+
+.bottomseatimage {
+  height: 15rem;
+  width: 25rem;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
 }

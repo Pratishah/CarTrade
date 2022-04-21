@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { carDetails } from "../../Models/carDetails";
 import { getcar } from "../../redux/carReducer/carReducer";
 import { reducerType } from "../../redux/configureStore";
@@ -27,7 +28,7 @@ const FeaturedCars = () => {
   }, [cars]);
 
   return (
-    <div style={{ backgroundColor: "white" }}>
+    <div style={{ backgroundColor: "white" }} className="boxfeature">
       <div className="featuretext featurebox">
         <h1>Featured Cars</h1>
       </div>
