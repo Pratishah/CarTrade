@@ -8,7 +8,7 @@ import ViewAllCars from "./CarTypeComp/ViewAllCars";
 import Corousel from "./Corousel/Corousel";
 import Detail from "./Detail/Detail";
 import NotFound from "./notfound/NotFound";
-import Form from "./Form/Form";
+import FormValidation from "./Form/FormValidation";
 import Success from "./bookingSuccess/Success";
 
 const RouteComponent = () => {
@@ -20,7 +20,10 @@ const RouteComponent = () => {
       <Route path="/SUV" element={<SUV />} />
       <Route path="/ViewAllCars" element={<ViewAllCars />} />
       <Route path="/cars/:id" element={<Detail />} />
-      <Route path="/Form" element={<Form />} />
+      <Route path="/hatchback/cars/:id" element={<Detail />} />
+      <Route path="/SUV/cars/:id" element={<Detail />} />
+      <Route path="/sedan/cars/:id" element={<Detail />} />
+      <Route path="/Form" element={<FormValidation />} />
       <Route path="/Success" element={<Success />} />
       <Route path="/" element={<Corousel />} />
       <Route path="/*" element={<NotFound />} />

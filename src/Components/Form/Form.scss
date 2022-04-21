@@ -1,0 +1,26 @@
+@import "../../theme/theme.scss";
+
+.formbox {
+  background-color: white !important;
+  width: 20rem;
+  height: 40rem;
+  margin: auto;
+}
+
+*label {
+  color: black;
+  text-align: left;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.submit {
+  background-color: $btn-color;
+  color: white;
+}
+
+.bookext {
+  margin: 1rem;
+  font-family: $font-style;
+  font-weight: $font-weight-corousel;
+}

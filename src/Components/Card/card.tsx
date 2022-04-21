@@ -48,7 +48,7 @@ const Carcard = (props: any) => {
               />
             </div>
             <div className="col-2">
-              <Link to={`./cars/ ${props.carDetail.id}`}>
+              <Link to={`./cars/${props.carDetail.id}`}>
                 <button className="{btnmargin}" style={{ marginTop: "0.5rem" }}>
                   {">"}
                 </button>
