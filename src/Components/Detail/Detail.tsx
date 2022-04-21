@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { json } from "stream/consumers";
 import Button from "../Button/Button";
@@ -7,6 +7,10 @@ import bmw1 from "../../Assets/bmw1.svg";
 import bmw2 from "../../Assets/bmw2.svg";
 import seat3 from "../../Assets/seat3.svg";
 import interior4 from "../../Assets/Interior4.svg";
+import { CarDetail } from "../../Models/CarDescription";
+import { reducerType } from "../../redux/configureStore";
+import { useDispatch, useSelector } from "react-redux";
+import { getcardetail } from "../../redux/carReducer/cardetailReducer";
 
 const Detail = (props: any) => {
   const carid = useParams();
@@ -16,6 +20,22 @@ const Detail = (props: any) => {
     let path = "/Form";
     navigate(path);
   };
+
+  const [details, setCarDetails] = useState<CarDetail | null>(null);
+
+  const data: any = useSelector<reducerType>((state) =>
+    // (state) => JSON.parse(JSON.stringify(state.carDetail)).car
+    console.log(state.carDetail)
+  );
+
+  //   as CarDetail;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getcardetail("marutidzire"));
+
+    ///In above line{{marutidzire}} has to be change with the id param from route
+  }, [dispatch]);
 
   //   <div>{JSON.stringify(carid)}.id</div>;
 
