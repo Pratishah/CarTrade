@@ -1,0 +1,24 @@
+@import "../../theme/theme.scss";
+.success {
+  height: 20rem;
+  width: 25rem;
+  align-content: center;
+  margin: 2rem;
+  background-color: white !important;
+
+  &h {
+    align-content: center;
+    text-align: center;
+    color: black;
+    font-family: $theme-font-family;
+  }
+}
+
+.successcontainer {
+  background-color: white;
+}
+
+.bmwcontainer {
+  margin: 1rem;
+  max-height: 20rem;
+}

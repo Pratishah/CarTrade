@@ -17,18 +17,25 @@ featurebox {
   color: black;
 }
 
-*h1 {
-  color: black;
-  font-family: $theme-font-family;
-  font-weight: $font-weight-corousel;
-}
+// *h1 {
+//   color: black;
+//   font-family: $theme-font-family;
+//   font-weight: $font-weight-corousel;
+// }
 
 .featuretext {
-  margin: 1rem;
+  padding-top: 1rem;
+  margin-left: 1rem;
 }
 
 .buttongroup {
   background-color: white;
   margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
+}
+
+.boxfeature h1 {
+  color: black;
+  font-family: $theme-font-family;
+  font-weight: $font-weight-corousel;
 }

@@ -1,3 +1,4 @@
+import CarTypeComp from "./CarTypeComp";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -6,10 +7,8 @@ import { getcar } from "../../redux/carReducer/carReducer";
 import { reducerType } from "../../redux/configureStore";
 import Carcard from "../Card/card";
 
-const CarTypeComp = (props: any) => {
+const ViewAllCars = () => {
   const [mapcars, setMapcars] = useState<carDetails[]>([]);
-
-  const tofilter = props.ctype as string;
 
   const cars: carDetails[] = useSelector<reducerType>(
     (state) => JSON.parse(JSON.stringify(state.carsState)).car
@@ -22,15 +21,15 @@ const CarTypeComp = (props: any) => {
 
   useEffect(() => {
     const mapcars: carDetails[] = cars?.filter(
-      (car: carDetails) => car.type === props.ctype
+      (car: carDetails) => car.type !== "xyz"
     );
     setMapcars(mapcars);
   }, [cars]);
 
   return (
-    <div style={{ backgroundColor: "white", marginBottom: "2rem" }}>
+    <div style={{ backgroundColor: "white" }}>
       <div className="featuretext featurebox">
-        <h1>{props.ctype}</h1>
+        <h1>{"ALL CARS"}</h1>
       </div>
 
       <div className="buttongroup">
@@ -64,4 +63,4 @@ const CarTypeComp = (props: any) => {
   );
 };
 
-export default CarTypeComp;
+export default ViewAllCars;
