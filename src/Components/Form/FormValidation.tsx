@@ -35,9 +35,9 @@ const FormValidation = () => {
     <div className="mainbox ">
       <div className="leftbox">
         <div>
-          <p>
+          <h4>
             <b>Car Details</b>
-          </p>
+          </h4>
           <br />
           <img src={bmw2} alt="" />
           <h6>BMW X5</h6>
@@ -54,11 +54,7 @@ const FormValidation = () => {
         </div>
       </div>
       <div className="rightbox">
-        <p>
-          <b>Booking Details</b>
-        </p>
-
-        <h1 className="booktext">Booking Details</h1>
+        <h4 className="booktext">Booking Details</h4>
 
         <Formik
           initialValues={defaultvalue}
