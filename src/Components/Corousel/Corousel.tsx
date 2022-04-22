@@ -28,7 +28,7 @@ const HeadCarousel = () => {
               {/* <Searchbox /> */}
               <img
                 className="d-block w-100"
-                src="https://imgd.aeplcdn.com/1056x594/cw/ec/37710/Maruti-Suzuki-Baleno-Right-Front-Three-Quarter-147420.jpg?wm=1&q=75"
+                src="https://images.carandbike.com/car-images/big/toyota/camry/toyota-camry.webp?v=33"
                 alt="First slide"
               />
             </Carousel.Item>
@@ -42,7 +42,7 @@ const HeadCarousel = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://imgd.aeplcdn.com/1056x594/cw/ec/37710/Maruti-Suzuki-Baleno-Right-Front-Three-Quarter-147420.jpg?wm=1&q=75"
+                src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Hyundai/Creta/6775/1584360708758/front-left-side-47.jpg?tr=w-456"
                 alt="Third slide"
               />
             </Carousel.Item>

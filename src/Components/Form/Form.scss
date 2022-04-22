@@ -24,3 +24,39 @@
   font-family: $font-style;
   font-weight: $font-weight-corousel;
 }
+
+.mainbox {
+  background-color: white;
+  display: flex;
+  padding: 2rem;
+
+  justify-content: space-between;
+
+  h {
+    color: black;
+  }
+}
+
+.mainbox > .rightbox {
+  flex: 1;
+}
+
+.leftbox {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 2rem;
+  border: 5px solid white;
+  img {
+    width: 15rem;
+  }
+}
+
+.rightbox {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 2rem;
+  border: 5px solid white;
+  img {
+    width: 15rem;
+  }
+}

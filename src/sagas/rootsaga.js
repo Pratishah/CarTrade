@@ -1,8 +1,9 @@
 import { takeLatest } from "redux-saga/effects";
-import { handleGetCars, handleGetSedanCars } from "./handlers/car";
-import { GET_CAR, GET_SEDAN_CARS } from "../redux/carReducer/carReducer";
+import { handleGetCarDetails, handleGetCars } from "./handlers/car";
+import { GET_CAR } from "../redux/carReducer/carReducer";
+import { GET_CAR_DETAIL } from "../redux/carReducer/cardetailReducer";
 
 export function* watcherSaga() {
-  yield takeLatest(GET_SEDAN_CARS, handleGetSedanCars);
+  yield takeLatest(GET_CAR_DETAIL, handleGetCarDetails);
   yield takeLatest(GET_CAR, handleGetCars);
 }

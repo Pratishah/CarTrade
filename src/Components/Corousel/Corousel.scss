@@ -6,14 +6,17 @@
   background: #364d79;
 }
 
-.containerstyle img {
-  height: 20rem !important;
-  background-color: linear-gradient(
-    269.41deg,
-    #000000 19.32%,
-    rgba(0, 0, 0, 0) 97.15%
-  );
-  width: 5rem;
+.containerstyle {
+  img {
+    margin: auto;
+    height: 30rem !important;
+    background-color: linear-gradient(
+      269.41deg,
+      #000000 19.32%,
+      rgba(0, 0, 0, 0) 97.15%
+    );
+    width: 70rem !important;
+  }
 }
 
 .containerstyle {
