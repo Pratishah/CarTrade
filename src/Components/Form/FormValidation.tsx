@@ -2,7 +2,8 @@ import { Field, Form, Formik, ErrorMessage } from "formik";
 import "./Form.scss";
 import React from "react";
 import * as yup from "yup";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import bmw2 from "../../Assets/bmw2.svg";
 
 const FormValidation = () => {
   const defaultvalue = { Name: "", Mob: "", city: "", accept: [] };
@@ -31,9 +32,34 @@ const FormValidation = () => {
     accept: yup.boolean().required("please accept trms and conditions"),
   });
   return (
-    <div className="formbox">
-      <h1 className="booktext">Booking Details</h1>
-      <div className="container form-group">
+    <div className="mainbox ">
+      <div className="leftbox">
+        <div>
+          <p>
+            <b>Car Details</b>
+          </p>
+          <br />
+          <img src={bmw2} alt="" />
+          <h6>BMW X5</h6>
+          <p>
+            <b>Fuel Type</b>
+          </p>
+          <p>Petrol and Deisel</p>
+
+          <p>
+            <b>Engine</b>
+          </p>
+          <p>2993 to 2998 C</p>
+          <Link to="/allcars">View Home</Link>
+        </div>
+      </div>
+      <div className="rightbox">
+        <p>
+          <b>Booking Details</b>
+        </p>
+
+        <h1 className="booktext">Booking Details</h1>
+
         <Formik
           initialValues={defaultvalue}
           onSubmit={submitHandler}
