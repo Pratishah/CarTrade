@@ -9,6 +9,7 @@ const FormValidation = () => {
   const defaultvalue = { Name: "", Mob: "", city: "", accept: [] };
   const submitHandler = (values: any) => {
     console.log(values);
+    routeChange();
   };
 
   let navigate = useNavigate();
@@ -129,7 +130,7 @@ const FormValidation = () => {
               <ErrorMessage name="accept" />
             </p>
 
-            <button onClick={routeChange} className="submit" type="submit">
+            <button className="submit" type="submit">
               submit
             </button>
           </Form>
